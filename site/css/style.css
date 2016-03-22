@@ -176,8 +176,40 @@ Footer styles (Main Module)
 .social {
     background-color: #FFD795;
     overflow: auto;
-    padding-bottom: 9.375rem;
+    padding-bottom: 3rem;
     text-align: center;
+}
+
+hr {
+    display: block;
+    -webkit-margin-before: 0.5rem;
+    -webkit-margin-after: 0.5rem;
+}
+
+.social h5 {
+    display: block;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+}
+
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 0.5rem 5px;
+    border: 2px solid lightblue;
+    padding: 0.635rem 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.social .linkedin {
+    color: #55acee;
+}
+
+.social .github {
+    color: #55acee;
 }
 
 

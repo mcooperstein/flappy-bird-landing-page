@@ -3,7 +3,6 @@ body {
     CSS reset
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
     */
-
     * {
         margin: 0;
         padding: 0;
@@ -25,17 +24,14 @@ body {
     General styles (General Module, wrapping around the modules bellow)
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
     */
-
     ol,
     ul {
         list-style: none;
     }
-
     div {
         display: block;
         width: 100%;
     }
-
     h1,
     h3,
     p {
@@ -46,65 +42,79 @@ body {
         letter-spacing: 2px;
     }
 
+    /* -------------------------------------
+    Header styles (Main Module)
+    (all the styles inside the < header > or < nav > tags)
+    */
+
+    .top-navigation {
+        background-color: #FFD795;
+        position: fixed;
+        width: 100%;
+        border-bottom: 1px solid #DDD;
+        z-index: 9999;
+        .content {
+            padding: 0px 15px;
+            font-size: 16px;
+            color: #838994;
+            letter-spacing: 0.03em;
+            .links {
+                float: right;
+                font-family: sans-serif;
+                color: yellow;
+                font-size: 16px;
+                margin-top: 25px;
+                -webkit-font-smoothing: antialiased;
+                display: inline;
+                li {
+                    display: inline-block;
+                    margin-left: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    /* -------------------------------------
+    Content styles (Main Module)
+    (all the styles inside the < sections > or < aside > tags)
+    */
+
+    .game_information {
+        background-image: url(../images/flappy-bird-5.png);
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50em;
+        overflow: auto;
+        .content {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            .call_to_action {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                button {
+                    width: 9.68rem;
+                    background-color: lime;
+                    border-color: green;
+                    text-shadow: none;
+                    border-style: none;
+                    border-radius: 4px;
+                    padding: 1rem 1.5rem;
+                    font-size: 1.125rem;
+                    transition: background-color 0.25s ease;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
 }
 
 
 
 
-/* -------------------------------------
-Header styles (Main Module)
-(all the styles inside the < header > or < nav > tags)
-*/
-
-.top-navigation {
-    background-color: #FFD795;
-    position: fixed;
-    width: 100%;
-    border-bottom: 1px solid #DDD;
-    z-index: 9999;
-.content {
-    padding: 0px 15px;
-    font-size: 16px;
-    color: #838994;
-    letter-spacing: 0.03em;
-    }}
-
-.top-navigation .links {
-    float: right;
-    font-family: sans-serif;
-    color: yellow;
-    font-size: 16px;
-    margin-top: 25px;
-    -webkit-font-smoothing: antialiased;
-    display: inline;
-}
-
-.top-navigation .links li {
-    display: inline-block;
-    margin-left: 25px;
-    margin-bottom: 10px;
-}
-
-
-/* -------------------------------------
-Content styles (Main Module)
-(all the styles inside the < sections > or < aside > tags)
-*/
-
-.game_information {
-    background-image: url(../images/flappy-bird-5.png);
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50em;
-    overflow: auto;
-}
-
-.game_information .content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .game_images {
     background-color: #8594B2;
@@ -131,25 +141,6 @@ Content styles (Main Module)
     width: 100%;
 }
 
-.call_to_action {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.call_to_action button {
-    width: 9.68rem;
-    background-color: lime;
-    border-color: green;
-    text-shadow: none;
-    border-style: none;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    font-size: 1.125rem;
-    transition: background-color 0.25s ease;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 /* -------------------------------------
