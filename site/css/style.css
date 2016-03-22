@@ -43,10 +43,24 @@ h1,
 h3,
 p {
     text-align: center;
-    color: #3B3A43;
-    padding-top: 15em;
-    font-weight: 800;
+    color: red;
+    font-weight: 700;
     letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    padding: 1.5em;
+    font-style: oblique;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    margin-top: 5em;
+    padding: 1em;
 }
 
 
@@ -99,6 +113,7 @@ Content styles (Main Module)
     background-repeat: no-repeat;
     height: 50em;
     overflow: auto;
+    opacity: 0.8;
 }
 
 .game_information .content {
@@ -140,7 +155,7 @@ Content styles (Main Module)
 
 .call_to_action button {
     width: 9.68rem;
-    background-color: lime;
+    background-color: red;
     border-color: green;
     text-shadow: none;
     border-style: none;
