@@ -1,168 +1,166 @@
-    body {
-    /* -------------------------------------
+        body {
+        /* -------------------------------------
     CSS reset
     (all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
     */
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
-        box-sizing: border-box;
-        /*reset Chrome user agent styles*/
-        -webkit-margin-before: 0px;
-        -webkit-margin-after: 0px;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-before: 0px;
-        -webkit-padding-after: 0px;
-        -webkit-padding-start: 0px;
-        -webkit-padding-end: 0px;
-    }
-    /* -------------------------------------
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+            box-sizing: border-box;
+            /*reset Chrome user agent styles*/
+            -webkit-margin-before: 0px;
+            -webkit-margin-after: 0px;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-before: 0px;
+            -webkit-padding-after: 0px;
+            -webkit-padding-start: 0px;
+            -webkit-padding-end: 0px;
+        }
+        /* -------------------------------------
     General styles (General Module, wrapping around the modules bellow)
     (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
     */
-    ol,
-    ul {
-        list-style: none;
-    }
-    div {
-        display: block;
-        width: 100%;
-    }
-    h1,
-    h3,
-    p {
-        text-align: center;
-        color: #3B3A43;
-        padding-top: 15em;
-        font-weight: 800;
-        letter-spacing: 2px;
-    }
-    /* -------------------------------------
+        ol,
+        ul {
+            list-style: none;
+        }
+        div {
+            display: block;
+            width: 100%;
+        }
+        h1,
+        h3,
+        p {
+            text-align: center;
+            color: #3B3A43;
+            padding-top: 15em;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        /* -------------------------------------
     Header styles (Main Module)
     (all the styles inside the < header > or < nav > tags)
     */
-    .top-navigation {
-        background-color: #FFD795;
-        position: fixed;
-        width: 100%;
-        border-bottom: 1px solid #DDD;
-        z-index: 9999;
-        .content {
-            padding: 0px 15px;
-            font-size: 16px;
-            color: #838994;
-            letter-spacing: 0.03em;
-            .links {
-                float: right;
-                font-family: sans-serif;
-                color: yellow;
+        .top-navigation {
+            background-color: #FFD795;
+            position: fixed;
+            width: 100%;
+            border-bottom: 1px solid #DDD;
+            z-index: 9999;
+            .content {
+                padding: 0px 15px;
                 font-size: 16px;
-                margin-top: 25px;
-                -webkit-font-smoothing: antialiased;
-                display: inline;
-                li {
-                    display: inline-block;
-                    margin-left: 25px;
-                    margin-bottom: 10px;
+                color: #838994;
+                letter-spacing: 0.03em;
+                .links {
+                    float: right;
+                    font-family: sans-serif;
+                    color: yellow;
+                    font-size: 16px;
+                    margin-top: 25px;
+                    -webkit-font-smoothing: antialiased;
+                    display: inline;
+                    li {
+                        display: inline-block;
+                        margin-left: 25px;
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
-    }
-    /* -------------------------------------
+        /* -------------------------------------
     Content styles (Main Module)
     (all the styles inside the < sections > or < aside > tags)
     */
-    .game_information {
-        background-image: url(../images/flappy-bird-5.png);
-        background-position: center bottom;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 50em;
-        overflow: auto;
-        .content {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .call_to_action {
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            button {
-                width: 9.68rem;
-                background-color: lime;
-                border-color: green;
-                text-shadow: none;
-                border-style: none;
-                border-radius: 4px;
-                padding: 1rem 1.5rem;
-                font-size: 1.125rem;
-                transition: background-color 0.25s ease;
+        .game_information {
+            background-image: url(../images/flappy-bird-5.png);
+            background-position: center bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 50em;
+            overflow: auto;
+            .content {
+                width: 90%;
                 margin-left: auto;
                 margin-right: auto;
             }
-        }
-    }
-
-    .game_images {
-        background-color: #8594B2;
-        overflow: hidden;
-        padding-bottom: 3em;
-        padding-top: 3em;
-        ul {
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            li {
-                width: 32.9%;
-                display: inline-block;
-                vertical-align: middle;
-                height: 12rem;
-                overflow: hidden;
-                img {
-                    width: 100%;
+            .call_to_action {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                button {
+                    width: 9.68rem;
+                    background-color: lime;
+                    border-color: green;
+                    text-shadow: none;
+                    border-style: none;
+                    border-radius: 4px;
+                    padding: 1rem 1.5rem;
+                    font-size: 1.125rem;
+                    transition: background-color 0.25s ease;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
-    }
-    /* -------------------------------------
+        .game_images {
+            background-color: #8594B2;
+            overflow: hidden;
+            padding-bottom: 3em;
+            padding-top: 3em;
+            ul {
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                li {
+                    width: 32.9%;
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 12rem;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
-    .social {
-        background-color: #FFD795;
-        overflow: auto;
-        padding-bottom: 9.375rem;
-        text-align: center;
-        h5 {
-            display: block;
-            -webkit-margin-before: 1.67em;
-            -webkit-margin-after: 1.67em;
-        }
-        .icons > li {
-            border-radius: 1.25rem;
-            width: 2.5rem;
-            height: 2.5rem;
-            display: inline-block;
-            margin: 0.5rem 5px;
-            border: 2px solid lightblue;
-            padding: 0.635rem 0;
+        .social {
+            background-color: #FFD795;
+            overflow: auto;
+            padding-bottom: 9.375rem;
             text-align: center;
-            cursor: pointer;
+            h5 {
+                display: block;
+                -webkit-margin-before: 1.67em;
+                -webkit-margin-after: 1.67em;
+            }
+            .icons > li {
+                border-radius: 1.25rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                display: inline-block;
+                margin: 0.5rem 5px;
+                border: 2px solid lightblue;
+                padding: 0.635rem 0;
+                text-align: center;
+                cursor: pointer;
+            }
+            .linkedin {
+                color: #55acee;
+            }
+            .github {
+                color: #55acee;
+            }
         }
-        .linkedin {
-            color: #55acee;
-        }
-        .github {
-            color: #55acee;
-        }
-    }
-
-    /* -------------------------------------
+        /* -------------------------------------
 place all the desktop styles above this line
 Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
