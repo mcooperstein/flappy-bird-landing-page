@@ -108,6 +108,10 @@ Header styles (Main Module)
     font-weight: bold;
 }
 
+.top-navigation .links li a:hover {
+    font-size: 1.5em;
+}
+
 
 /* -------------------------------------
 Content styles (Main Module)
