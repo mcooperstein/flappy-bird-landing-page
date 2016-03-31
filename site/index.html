@@ -116,6 +116,18 @@
             opacity: 0.9;
         }
 
+        @media only screen and (min-width: 768px) {
+            .game_information {
+                background-image: url("../site/images/flappy-bird-small.jpg");
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .game_information {
+                background-image: url("../site/images/flappy-bird-medium.jpg");
+            }
+        }
+
         .game_information .content {
             width: 90%;
             margin-left: auto;
@@ -145,6 +157,10 @@
 
         .game_images .images > li img {
             width: 100%;
+        }
+
+        .game_images ul.images li > h5 {
+            color: white;
         }
 
         .call_to_action {
@@ -274,6 +290,7 @@
             <ul class="images">
                 <li>
                     <img src="../site/images/flappy-bird-1.jpg">
+                    <h5>Click on the Images above to see them "Pop"!</h5>
                 </li>
                 <li>
                     <img src="../site/images/flappy-bird-4.png">
@@ -285,20 +302,27 @@
         </div>
     </section>
 
+    <section class="new-text">
+        <div class="content">
+            <div class="image-pop">
+                <h4>Click on the Images to see them "Pop"!</h4>
+            </div>
+        </div>
+    </section>
+
     <section class="new_images">
         <div class="content">
             <ul class="images">
                 <li>
                     <picture>
-                        <source srcset="../site/images/Flappy-Bird-test-img.jpg" media="(min-width: 1000px)">
-                        <source srcset="../site/images/flappy-bird-1.jpg" media="(min-width: 800px)">
-                        <img srcset="../site/images/flappy-bird-4.png" alt="…">
+                        <source srcset="../site/images/flappy-bird-1.jpg" media="(min-width: 1000px)">
+                        <source srcset="../site/images/Flappy-Bird-test-img.jpg" media="(min-width: 500px)">
+                        <img srcset="../site/images/flappy-bird3.jpg" alt="…">
                     </picture>
                 </li>
             </ul>
         </div>
     </section>
-
 
     <footer class="social">
         <div class="content">
