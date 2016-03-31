@@ -159,6 +159,30 @@ Content styles (Main Module)
     width: 100%;
 }
 
+.new_images {
+    background-color: #8594B2;
+    overflow: hidden;
+    margin-bottom: -0.5em;
+}
+
+.new_images ul.images {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.new_images .images > li {
+    width: 98%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.new_images .images > li picture {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .call_to_action {
     margin-left: auto;
     margin-right: auto;
